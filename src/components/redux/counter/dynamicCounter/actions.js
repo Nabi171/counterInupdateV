@@ -1,14 +1,14 @@
-import { INCREMENT, DECREMENT } from "./actionTypes";
+import { DINCREMENT, DDECREMENT } from "./actionTypes";
 
-export const increment = (value) => {
+export const increment = () => {
     return {
-        type: INCREMENT,
-        payload: value,
+        type: DINCREMENT,
+
     };
 };
-export const decrement = (value) => {
+export const decrement = () => {
     return {
-        type: DECREMENT,
-        payload: value,
+        type: DDECREMENT,
+
     };
 };
