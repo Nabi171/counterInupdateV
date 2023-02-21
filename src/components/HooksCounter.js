@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './redux/counter/actions';
 const HooksCounter = ({ }) => {
-    const count = useSelector((state) => state.value);
+    const count = useSelector((state) => state.counter.value);
     const dispatch = useDispatch();
     const incrementHandler = () => {
         dispatch(increment());
